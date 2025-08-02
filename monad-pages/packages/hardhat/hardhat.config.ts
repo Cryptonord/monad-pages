@@ -121,6 +121,10 @@ const config: HardhatUserConfig = {
       url: "https://forno.celo.org",
       accounts: [deployerPrivateKey],
     },
+    monad: {
+      url: "https://rpc.ankr.com/monad_testnet",
+      accounts: [deployerPrivateKey],
+    },
     celoAlfajores: {
       url: "https://alfajores-forno.celo-testnet.org",
       accounts: [deployerPrivateKey],
