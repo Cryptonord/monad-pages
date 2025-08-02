@@ -13,6 +13,24 @@ export type ScaffoldConfig = BaseConfig;
 
 export const DEFAULT_ALCHEMY_API_KEY = "oKxs-03sij-U_N0iOlrSsZFr29-IqbuF";
 
+const monad = {
+  id: 10143, // Replace with actual Monad Testnet Chain ID
+  name: "Monad Testnet",
+  network: "monad-testnet",
+  nativeCurrency: {
+    decimals: 18,
+    name: "MON",
+    symbol: "MON",
+  },
+  rpcUrls: {
+    public: { http: ["https://rpc.ankr.com/monad_testnet"] }, // Paste your RPC URL here again
+    default: { http: ["https://rpc.ankr.com/monad_testnet"] }, // And here
+  },
+  blockExplorers: {
+    default: { name: "MonadScan", url: "https://testnet.monadexplorer.com/" }, // Replace with actual explorer URL
+  },
+};
+
 const scaffoldConfig = {
   // The networks on which your DApp is live
   targetNetworks: [chains.hardhat],
